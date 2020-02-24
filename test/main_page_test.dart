@@ -6,10 +6,10 @@ import 'package:loca/screens/main_page.dart';
 
 void main(){
   testWidgets('Main_page string test', (WidgetTester tester) async{
-    await tester.pumpWidget(MainPage(title: 'T', message: 'M'));
+    await tester.pumpWidget(MainPage(title: 'Title', message: 'Message'));
 
-    final titleFinder = find.text('T');
-    final messageFinder = find.text('M');
+    final titleFinder = find.text('Title');
+    final messageFinder = find.text('Message');
 
     expect(titleFinder, findsOneWidget);
     expect(messageFinder, findsOneWidget);
